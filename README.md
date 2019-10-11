@@ -3,4 +3,4 @@
 
 
 
-Includes to active projects looking at alternative to maturation control.
+Includes two active projects looking at alternatives to maturation control.
