@@ -1,0 +1,187 @@
+---
+title: "Enhancing sustainability of shellfish aquaculture through streamlined maturation control"
+subtitle: Final Report
+author: Steven Roberts
+date: "`r format(Sys.time(), '%d %B, %Y')`"  
+format:
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+
+
+# Project Rationale
+
+Sterile shellfish are both a market driven need and an ecologically sustainable approach to increase food production via aquaculture. Sterility has clear advantages in shellfish aquaculture including the ability to 1) increase growth and flesh quality as nutrient/energy reserves normally utilized in gonad development are directed to somatic tissue, and 2) preclude genetic contamination of wild, native bivalve populations by farmed conspecifics. To increase the productivity and sustainability of the shellfish aquaculture sector, while at the same time enabling hatchery responsiveness to both environmental challenges and market demands through breeding and maturation control, a time-efficient, practical, and cost-effective means to produce sterile shellfish is critically needed. The current method for reproductive impairment involves producing triploid oysters, which are effectively sterile. However, generating triploid oysters from a selected line of oysters can take up to 10 years and is not 100% effective. An attractive alternative to ploidy manipulation, that very recently has been shown to be successful in finfish aquaculture, is the induction of sterility by inactivation of genes essential for germ cell formation and development. It is the germ cell line that ultimately develops into gametes, therefore disrupting their formation and development blocks any possibility of fertility. A thorough understanding of genes involved in germ cell fate is a critical first step toward controlling reproduction through molecular approaches such as these. Given recent advances in finfishes, the shellfish industry is now in an ideal position to adapt and adopt these technological advances. Development of this technology in bivalve shellfish requires knowledge of the specific genes essential for bivalve germ cell fate. Our proposal to advance this gap in knowledge is pivotal to achieving a thriving, environmentally-sustainable shellfish industry. The specific objectives of the project are to a) Characterize genomic processes involved in germ cell specification in Pacific oysters and b) Optimize delivery techniques of custom gene-regulating molecules to oyster embryos
+
+# Characterize genomic processes involved in germ cell specification in Pacific oysters
+
+## Background
+
+Primordial germ cells (PGCs) are essential for the development of reproductive cells like eggs and sperm. They form early in an embryo's development and eventually give rise to germinal stem cells. There are different ways that PGCs are specified in organisms, which can lead to varying reproductive mechanisms. Understanding how PGCs work is important for managing reproduction in the aquaculture industry, especially in producing sterile fish.
+
+In bivalves, such as oysters, the study of PGCs is still in its early stages. Researchers have identified a gene called vasa, which is important for PGC development in these animals. However, more research is needed to understand other genes involved in this process.
+
+Studying PGCs has been challenging due to the difficulty of isolating these cells from other cell types in embryos. Recent advancements in single-cell RNA sequencing technology offer a new approach to studying PGCs by allowing researchers to analyze individual cells. This method is particularly useful for studying PGCs in bivalves, as they make up only a small number of cells in developing embryos. By applying this technology to early Pacific oyster embryos, researchers hope to gain a better understanding of the genes involved in PGC development in bivalves.
+
+## Research Activity
+
+### Methods
+
+The study involves two experiments on Pacific oyster PGCs (Primordial Germ Cells) to identify and characterize genes uniquely expressed in these cells. The first experiment focuses on the earliest developmental stages, from the first cell division through the blastula stage. These stages were chosen as previous research has shown that the germ line marker, vasa, is restricted to a small number of cells during these stages. The second experiment targets the gastrula stage embryos, which represent a more differentiated embryonic stage, but still containing a small enough number of cells per embryo to sequence representative germ cells.
+
+![Schematic representation of sampling design. The first experiment, referred to as "Cl/Bla" throughout, represents continuous stages of development from cleavage stage to blastula embryos (i.e. all samples through blastula collected as consistent time intervals). Cleavage stage embryos (in orange) were pooled into a single sample representing all cleavage stages. A sample of blastula stage embryos (red) were collected and sequenced in a separate library to anchor developmental time, but cells from this experiment are analyzed together. A second experiment was performed where embryos representing gastrula stage embryos were sampled and analyzed separately.](img/design.png)
+
+Researchers collected samples of embryos from various developmental stages, including cleavage, blastula, and gastrula stages. They prepared two batches of embryos for cell dissociation and library preparation. The first batch represented a pool of the first eight samples, while the second batch represented the blastula stage. In a separate experiment, gastrula stage embryos were collected and prepared for cell dissociation.
+
+Cells were dissociated using enzymatic digestion and prepared for sequencing using the Chromium platform. The resulting single-cell mRNA libraries were sequenced, and the data was processed using Cell Ranger software. UMAP (Uniform Manifold Approximation and Projection) was used for visualization and clustering of the cells, with marker gene identification performed using the Monocle3 software. Lastly, an iterative BLAST comparison was used for comparative annotation of the C. gigas gene set with model invertebrates, such as C. elegans, D. melanogaster, and S. purpuratus.
+
+### Results
+
+Scientists conducted a study to better understand the development of reproductive cells in Pacific oysters. They focused on the role of a gene called vasa, which is known to be important for the development of primordial germ cells (PGCs), the cells that eventually give rise to eggs and sperm.
+
+![Transcriptional atlas of earliest developmental timepoints. UMAP of 10,494 cells from Cp/Bla where colors represent clusters (A), cells from the blastula library (pink) compared to those of the cleavage pool (B), the number genes expressed per umi, normalized by the log10 gene expression (C).](img/umap.png)
+
+Using advanced sequencing techniques, researchers analyzed thousands of cells from early-stage oyster embryos. They were able to identify different groups of cells based on their gene expression patterns. Among these groups, one cluster of cells showed high levels of vasa expression, suggesting they were likely to be PGCs or their precursors.
+
+![Transcriptional atlas of earliest developmental timepoints. UMAP of 10,494 cells from Cp/Bla where colors represent clusters (A), cells from the blastula library (pink) compared to those of the cleavage pool (B), the number genes expressed per umi, normalized by the log10 gene expression (C).](img/vasa.png)
+
+In addition to vasa, the study also found other genes that were specifically expressed in these putative PGCs, including a conserved germline marker called nanos. The identification of these markers could help scientists better understand the processes that govern reproductive cell development in oysters and other related species.
+
+![Marker genes associated with putative PGC in Pacific oysters. Expression characterization of select pPGC marker genes across 14 clusters of gastrula cells. The percent number of cells expressing a gene is shown by circle size, with color indicating expression level (log (mean + 0.1).](img/dots.png)
+
+Besides focusing on PGCs, researchers also identified other cell types in the developing embryos, such as ciliary cells, muscle cells, and immune cells. This comprehensive analysis of gene expression in early-stage oyster embryos could provide valuable insights into the complex processes that govern the development of these organisms.
+
+![Multi-state expression atlas of gastrula cells. UMAP of gastrula cell states where colors correspond to clusters and cell states are annotated according to marker genes function.](img/umap2.png)
+
+\newpage
+
+### Highlights
+
+The three most important outcomes of these results are:
+
+1.  Identification of putative primordial germ cells (PGCs): The study identified a cluster of cells with high levels of vasa expression, suggesting they are likely PGCs or their precursors. This finding is crucial for understanding the development of reproductive cells in Pacific oysters and potentially other related species.
+
+2.  Discovery of specific gene markers for PGCs: In addition to vasa, the researchers found other genes, including a conserved germline marker called nanos, that were specifically expressed in putative PGCs. These markers could help scientists further study the processes governing reproductive cell development and differentiation in oysters.
+
+3.  Comprehensive analysis of early-stage oyster embryos: The research provided a detailed view of gene expression patterns in early-stage oyster embryos, identifying various cell types such as ciliary cells, muscle cells, and immune cells. This broad understanding of the complex processes involved in oyster development can contribute to our knowledge of marine biology, aquaculture, and conservation efforts.
+
+### Interpretation
+
+The primary goal of the study was to identify genes uniquely expressed in the earliest germ cells in Pacific oysters. The researchers pooled early cleavage stages through blastula stage embryos to analyze gene expression patterns. They found the germ cell marker vasa expressed almost ubiquitously, but the highest expression was observed in older cells, suggesting either sequestration or zygotic expression. Identifying unique genes co-expressed with vasa was challenging. However, the research provided insights into gene expression patterns in early-stage oyster embryos, identifying ciliary cells, muscle cells, immune cells, and other cell types.
+
+The data revealed heterogeneity in cell types from the gastrula sample, with vasa expression restricted to fewer cells. The presumptive primordial germ cells (PGCs) were identified by the co-expression of vasa and nanos. The gene with the highest specificity to the presumptive PGC cluster was unannotated, making it an interesting candidate for further studies.
+
+In conclusion, this dataset demonstrates the utility of single-cell RNA sequencing to study PGC specification in mollusks, an understudied area. The identification of vasa, nanos, and other genes associated with germ cell formation will be useful for future functional studies.
+
+\newpage
+
+# Optimize delivery techniques of custom gene-regulating molecules to oyster embryos
+
+
+ Here's a brief explanation of each:
+
+Dextran:
+Dextran is a complex, branched polysaccharide derived from bacterial fermentation. It is composed of glucose units linked together and has various applications in biology, including as a molecular carrier for delivering substances into cells. In the context of molecule delivery into eggs, dextrans conjugated to molecules of interest (such as fluorescent dyes, proteins, or nucleic acids) can be microinjected into eggs or embryos, allowing researchers to study the distribution, dynamics, and function of these molecules in the developing organism.
+
+Endo-Porter:
+Endo-Porter is a proprietary peptide-based delivery system designed to facilitate the uptake of molecules by cells. It works by allowing molecules that are typically unable to cross the cell membrane, such as nucleic acids and proteins, to be internalized by cells via endocytosis. In the case of eggs, endo-porter can be used to deliver molecules like morpholinos, siRNA, or other gene-modulating agents to study gene function and regulation during early development. This method is less invasive than microinjection and can provide more uniform delivery of molecules across the cells.
+
+Morpholinos:
+Morpholinos are synthetic, non-toxic, nucleic acid analogs that can specifically bind to target mRNA sequences through complementary base pairing. They are used to modulate gene expression by blocking translation (protein synthesis) or splicing of the target mRNA. Morpholinos are commonly used in developmental biology research to study gene function in eggs and embryos by knocking down or modifying the expression of specific genes. These molecules can be introduced into eggs or embryos through methods like microinjection or electroporation, or by using a delivery agent like endo-porter.
+
+## Dextran Testing
+
+The purpose of this study was to explore passive uptake of fluorescent labeled dextran in C.gigas oocytes in preparation for electroporation trials. The study involved reconstituting and aliquoting the dextran, exploring the functionality of the fluorescent scope, evaluating whether or not there is passive uptake of the dextran, incubating embryos in 12 well plates to evaluate their survival, and counting embryos.
+
+The experiments involved hydrating oocytes and preparing labeled dextran, conducting dye trials to observe the uptake of the dye, and embryo plating. In the dye trials, the dye was mixed with only the oocytes initially and then with sperm and oocytes. The results showed that dye mixed with sperm and oocytes showed lots of fluorescence, whereas in cases where only oocytes were used for the trials, no fluorescence was observed. The study then involved embryo plating, where fertilized oocytes were counted and placed in a 12 well plate. The plates were then observed for 48 and 96 hours to evaluate their viability.
+
+The study confirmed that fluorescence on oocytes was due to sperm presence. The next steps included repeating the dye trials, purchasing morpholinos to examine results, and considering how to objectively assay viability based on the well format.
+
+The embryos survived for the most part, and the results of this experiment can help inform future electroporation trials.
+
+
+
+OPTION 2
+The purpose of this experiment was to investigate the passive uptake of fluorescent labeled dextran in C. gigas oocytes as a preparation for electroporation trials. The experiment involved reconstituting and aliquoting the dextran, exploring the functionality of the fluorescent scope to visualize the fluorescein dye, evaluating whether there was passive uptake of the dextran, and incubating embryos in 12 well plates to evaluate survival (needed for holding embryos after electroporation trials). The findings revealed that the presence of sperm induced fluorescence on oocytes in trial 2, and there was no fluorescence on oocytes in trial 3, confirming the previous results. Embryo plating was conducted, and after 96 hours, the oysters were sacrificed with freshwater. The next steps recommended were to repeat dye trials 2 and 3 to confirm the results, plate out the oysters from these dye trials, purchase morpholinos to repeat dye trial 2 and 3 with morpholino-labeled dextran, and consider how to objectively assay viability in this well-based format.
+
+## Endoporter Testing 
+
+Olivia Cattau conducted a series of experiments to test the use of morpholinos in conjunction with fluorescent endo-porter for C. gigas oocytes. The goal was to repeat dye trials 2 and 3 with morpholino-labeled dextran. The experiment involved adding the endo-porter first, followed by either dex or morpholinos. The ideal concentration for the endo-porter was found to be 6uM, and for the morpholino, it was 10uM. However, no fluorescence was observed in any living cells, and all embryos died before 16 hours. Further experiments are needed to determine the optimal conditions for observing fluorescence in living cells
+
+---
+
+This experiment investigates the effects of endo porter and morpholino on the survival of fertilized eggs. The experiment consisted of 4 trials, each with different treatments.
+
+Trial 1: Fertilized eggs + endo porter (2/6/10 uM) + morpholino (1uM)
+Trial 2: Fertilized eggs + endo porter (2/6/10 uL/mL) at 50,000 cells/well
+Trial 3: Fertilize with dex + endo porter (2uM)
+Trial 4: Fertilize eggs + endo porter (2uM) + morpholino (10uM)
+
+Results showed that in the control group, only 2uM endo porter concentration had a 10% survival rate while the rest of the concentrations led to all embryos dying. In Trial 1, all treatments had a survivorship of over 10%, with no fluorescence. Trial 2 showed all embryos dead, with increasing fluorescence as endo porter concentration increased. Trial 3 had the highest survivorship (around 50%) and no fluorescence, while Trial 4 had a 5% survivorship and no fluorescence, but morpholino concentration was too high.
+
+The conclusion is to test lower morpholino concentrations with optimized endo porter concentrations to improve the outcome.
+
+---
+
+In this experiment, the impact of endo porter and morpholino on fertilized egg survival was explored through four different trials. Results indicated that only 2uM endo porter concentration yielded a 10% survival rate in the control group. Trials 1 and 3 displayed higher survivorship rates (over 10% and around 50%, respectively) with no fluorescence, while Trial 2 resulted in all embryos dying with increasing fluorescence. Trial 4 had a low survivorship of 5% and no fluorescence, but the morpholino concentration was too high. The conclusion suggests testing lower morpholino concentrations alongside optimized endo porter concentrations for better outcomes.
+
+---
+
+
+
+
+Steps Accomplished so far
+
+Ideal settling ratio = 1mL/5000 oocytes or eggs at 23℃
+Dextran works but needs a molecular delivery partner
+Morpholino works but needs a molecular delivery partner
+Oyster embryos do not autofluoresce 
+Ideal Endo-Porter concentration of 6uM
+Ideal Morpholino concentration of 10uM
+
+
+-   Control: fertilized embryos \@ 5,000 cells per well
+-   Endo-control: Control + Endoporter at 2uM and 6uM
+-   Treatment 1: Morpholino \@ 5uM + Endo-porter \@ 2uM and 6uM
+-   Treatment 2: Morpholino \@ 10uM + Endo-porter \@ 2uM and 6uM
+
+![exp1](img/exo01.png)
+
+-   Control: fertilized embryos \@ 5,000 cells per well
+-   Endo-control: Control + Endoporter at 6uM
+-   Treatment 1: Control Morpholino \@ 10uM + Endo-porter \@ 6uM
+-   Treatment 2: Vasa Morpholino \@ 10uM alone
+-   Treatment 3: Vasa Morpholino \@ 10uM + Endo-porter \@6uM
+
+![exp2](img/exo02.png)
+
+## Electroporation Trials
+
+This scientific protocol aims to study the potential of electroporation to deliver molecules into geoduck embryos. The experiment is divided into three phases:
+
+Phase 0: Determines if geoduck embryos can be plated and kept alive, and if they autofluoresce under various wavelengths.
+
+Phase I: Explores electroporation parameters and the uptake of fluorescein-labeled dextrans. Parameters to explore include dextran concentration, pulse shape, pulse time, number of pulses, buffer conductivity, pulse voltage, and egg density. Indicators to be used are the percentage of fluorescent embryos and viability assay.
+
+Phase II: Aims to introduce silencing molecules into embryos via electroporation, using fluorophore-labeled morpholinos or guide RNAs.
+
+The experimental design is based on treating fertilized eggs with different electroporation protocols and evaluating the outcomes in terms of fluorescence, viability, and development. Control groups are also established to compare results. Imaging challenges have been encountered, and further optimization is needed. The protocol has been repeated with fresh, higher viability gametes to improve results.
+
+The primary accomplishments of this scientific protocol include:
+
+1.  Successfully plating and keeping geoduck embryos alive for experimentation.
+
+2.  Evaluating autofluorescence of geoduck embryos under various wavelengths.
+
+3.  Investigating the electroporation process for introducing molecules into geoduck embryos.
+
+4.  Identifying and exploring key electroporation parameters that influence the uptake of fluorescein-labeled dextrans in geoduck embryos.
+
+5.  Evaluating the potential of electroporation for introducing silencing molecules (fluorophore-labeled morpholinos or guide RNAs) into embryos.
+
+6.  Comparing the outcomes of different electroporation protocols in terms of fluorescence, viability, and development.
+
+While some challenges were encountered in terms of imaging and optimization, the protocol has made progress in understanding the potential of electroporation for delivering molecules into geoduck embryos.
